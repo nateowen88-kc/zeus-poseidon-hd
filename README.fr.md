@@ -26,7 +26,7 @@ Silicon ou Intel) ou sous Linux : le jeu d'origine, sans Windows, sans Wine et s
 | | |
 |---|---|
 | **Ce que c'est** | Le vrai *Zeus* + *Poséidon* (Impressions Games, 2000) : le code d'origine du jeu, non modifié, exécuté dans un petit émulateur x86. Même simulation, mêmes règles, mêmes sauvegardes. Pas une réécriture. |
-| **État** | Jouable du début à la fin. Dernière version : **[1.7.2](https://github.com/nic0lasm/zeus-poseidon-arm64/releases/latest)** (10 novembre 2026). |
+| **État** | Jouable du début à la fin. Dernière version : **[1.7.3](https://github.com/nic0lasm/zeus-poseidon-arm64/releases/latest)** (21 novembre 2026). |
 | **Fonctionne sur** | Mac Apple Silicon ou Intel, macOS 11 (Big Sur) ou plus récent ; Linux x86-64 et arm64. |
 | **Il vous faut** | Votre propre copie du jeu, édition GOG (ou [Steam](#acheté-sur-steam-)). Ce dépôt ne contient aucun fichier du jeu ([Mentions légales](#mentions-légales)). |
 | **Fidèle** | Dix scénarios rejoués comparent chaque image et tout l'état de la partie, tour par tour, avec le jeu d'origine. |
@@ -98,6 +98,7 @@ entièrement natif (2.0, comme Julius l'a fait pour *Caesar III*) est en pause, 
 
 | Version | Points forts |
 |---|---|
+| [**1.7.3**](https://github.com/nic0lasm/zeus-poseidon-arm64/releases/tag/v1.7.3) | R fait de nouveau tourner l'emprise d'un bâtiment, quelle que soit la disposition du clavier ([#172](https://github.com/nic0lasm/zeus-poseidon-arm64/pull/172)) ; sur Mac, jusqu'à un sixième plus rapide par moments ([#170](https://github.com/nic0lasm/zeus-poseidon-arm64/pull/170)) ; le calcul flottant démarre comme dans un thread Windows ([#171](https://github.com/nic0lasm/zeus-poseidon-arm64/pull/171)) (le tout par [@northdakota](https://github.com/northdakota)) |
 | [**1.7.2**](https://github.com/nic0lasm/zeus-poseidon-arm64/releases/tag/v1.7.2) | mode large : plus rien de l'écran précédent autour des menus ([#159](https://github.com/nic0lasm/zeus-poseidon-arm64/issues/159)) |
 | [**1.7.1**](https://github.com/nic0lasm/zeus-poseidon-arm64/releases/tag/v1.7.1) | plus fluide : une image à chaque tour de simulation, défilement fluide, Z Q S D ; les curseurs du jeu ; menus centrés en mode large ; Steam trouvé dans les bouteilles Wine ; outils pour traduire dans une nouvelle langue |
 | [**1.7**](https://github.com/nic0lasm/zeus-poseidon-arm64/releases/tag/v1.7) | Mac plus anciens : les deux archives Mac fonctionnent dès macOS 11, Mac Intel de 2013 compris |

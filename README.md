@@ -26,7 +26,7 @@ or on Linux: the original game, with no Windows, no Wine and no virtual machine.
 | | |
 |---|---|
 | **What it is** | The real *Zeus* + *Poseidon* (Impressions Games, 2000): the original, unmodified game code, run in a small x86 emulator. Same simulation, same rules, same save files. Not a remake. |
-| **Status** | Playable from start to finish. Latest version: **[1.7.2](https://github.com/nic0lasm/zeus-poseidon-arm64/releases/latest)** (10 November 2026). |
+| **Status** | Playable from start to finish. Latest version: **[1.7.3](https://github.com/nic0lasm/zeus-poseidon-arm64/releases/latest)** (21 November 2026). |
 | **Runs on** | Mac with Apple Silicon or Intel, macOS 11 (Big Sur) or later; Linux x86-64 and arm64. |
 | **You need** | Your own copy of the game, GOG edition (or [Steam](#bought-it-on-steam)). This repository contains no game files ([Legal](#legal)). |
 | **Faithful** | Ten replayable scenarios compare every frame and the whole game state, tick by tick, with the original game. |
@@ -96,6 +96,7 @@ fully native engine (2.0, the way Julius did for *Caesar III*) is on hold, with 
 
 | Version | Highlights |
 |---|---|
+| [**1.7.3**](https://github.com/nic0lasm/zeus-poseidon-arm64/releases/tag/v1.7.3) | R rotates a building's footprint again, with any keyboard layout ([#172](https://github.com/nic0lasm/zeus-poseidon-arm64/pull/172)); a Mac run up to a sixth faster at times ([#170](https://github.com/nic0lasm/zeus-poseidon-arm64/pull/170)); the floating-point start of a Windows thread ([#171](https://github.com/nic0lasm/zeus-poseidon-arm64/pull/171)) (all by [@northdakota](https://github.com/northdakota)) |
 | [**1.7.2**](https://github.com/nic0lasm/zeus-poseidon-arm64/releases/tag/v1.7.2) | wide modes: nothing left of the previous screen around the menus ([#159](https://github.com/nic0lasm/zeus-poseidon-arm64/issues/159)) |
 | [**1.7.1**](https://github.com/nic0lasm/zeus-poseidon-arm64/releases/tag/v1.7.1) | smoother: a frame for every simulation tick, smooth scrolling, W A S D; the game's own cursors; menus centred in wide modes; Steam found in Wine bottles; tools to translate into a new language |
 | [**1.7**](https://github.com/nic0lasm/zeus-poseidon-arm64/releases/tag/v1.7) | older Macs: both Mac archives run from macOS 11, Intel Macs from 2013 included |
