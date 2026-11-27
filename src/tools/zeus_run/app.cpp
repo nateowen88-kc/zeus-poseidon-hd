@@ -290,6 +290,7 @@ int run_app(const std::string& installer) {
     o.exe = exe;
     o.write_dir = (support / "Jeu").string();
     o.wide = "auto";
+    o.fullscreen = true;
     // Smooth scrolling of the city map; ZEUS_SMOOTH_SCROLL=0 turns it off for one launch.
     const char* smooth = std::getenv("ZEUS_SMOOTH_SCROLL");
     o.smooth_scroll = !(smooth && std::string(smooth) == "0");

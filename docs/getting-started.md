@@ -64,8 +64,9 @@ cmake --build build
 
 ![The main menu](images/menu.png)
 
-The game opens in an 800×600 window. **⌘F** or **⌘↩** switches to full screen and back; the
-picture keeps its 4:3 proportions and stays sharp at any size. For a larger view of the city,
+The command-line game opens in an 800×600 window. The app opens full screen by default; **⌘F** or
+**⌘↩** switches between full screen and a window. The picture keeps its 4:3 proportions and stays
+sharp at any size. For a larger view of the city,
 choose *Options → Display options → 1024 x 768* in the game. Started with `--wide auto` (the
 application always does), that mode becomes a wide one fitted to your screen (taller than 768 lines on a screen taller than
 16:9), and the option

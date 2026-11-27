@@ -1,9 +1,14 @@
 # Zeus + Poseidon on Mac and Linux
 
-[![Latest release](https://img.shields.io/github/v/release/nic0lasm/zeus-poseidon-arm64?label=download&color=1f6feb)](https://github.com/nic0lasm/zeus-poseidon-arm64/releases/latest)
+> **Zeus & Poseidon HD fork:** based on upstream 1.7.3, with full-screen launch enabled by default.
+> HD work is in its assessment phase; gameplay and rendering are unchanged. See
+> [`docs/project-assessment.md`](docs/project-assessment.md) for the verified architecture,
+> Intel build status, HD feasibility and phased plan.
+
+[![Latest release](https://img.shields.io/github/v/release/nateowen88-kc/zeus-poseidon-hd?label=download&color=1f6feb)](https://github.com/nateowen88-kc/zeus-poseidon-hd/releases/latest)
 [![Mac Apple Silicon and Intel](https://img.shields.io/badge/Mac-Apple%20Silicon%20%C2%B7%20Intel-333?logo=apple)](#download)
 [![Linux x86-64 and arm64](https://img.shields.io/badge/Linux-x86--64%20%C2%B7%20arm64-333?logo=linux)](#download)
-[![build](https://github.com/nic0lasm/zeus-poseidon-arm64/actions/workflows/build.yml/badge.svg)](https://github.com/nic0lasm/zeus-poseidon-arm64/actions/workflows/build.yml)
+[![build](https://github.com/nateowen88-kc/zeus-poseidon-hd/actions/workflows/build.yml/badge.svg)](https://github.com/nateowen88-kc/zeus-poseidon-hd/actions/workflows/build.yml)
 [![Proven identical: 10 scenarios](https://img.shields.io/badge/proven%20identical-10%20scenarios-2ea043)](docs/equivalence.md)
 [![License: GPL-2.0-or-later](https://img.shields.io/badge/license-GPL--2.0--or--later-green)](LICENSE)
 
@@ -26,7 +31,7 @@ or on Linux: the original game, with no Windows, no Wine and no virtual machine.
 | | |
 |---|---|
 | **What it is** | The real *Zeus* + *Poseidon* (Impressions Games, 2000): the original, unmodified game code, run in a small x86 emulator. Same simulation, same rules, same save files. Not a remake. |
-| **Status** | Playable from start to finish. Latest version: **[1.7.3](https://github.com/nic0lasm/zeus-poseidon-arm64/releases/latest)** (21 November 2026). |
+| **Status** | Playable from start to finish. Latest version: **[1.7.4](https://github.com/nateowen88-kc/zeus-poseidon-hd/releases/latest)** (26 November 2026). |
 | **Runs on** | Mac with Apple Silicon or Intel, macOS 11 (Big Sur) or later; Linux x86-64 and arm64. |
 | **You need** | Your own copy of the game, GOG edition (or [Steam](#bought-it-on-steam)). This repository contains no game files ([Legal](#legal)). |
 | **Faithful** | Ten replayable scenarios compare every frame and the whole game state, tick by tick, with the original game. |
@@ -36,12 +41,12 @@ or on Linux: the original game, with no Windows, no Wine and no virtual machine.
 
 | Your computer | Download |
 |---|---|
-| Mac with Apple Silicon (M1 or later), macOS 11+ | **[⬇ Zeus-Poseidon-macos-arm64.zip](https://github.com/nic0lasm/zeus-poseidon-arm64/releases/latest/download/Zeus-Poseidon-macos-arm64.zip)** |
-| Mac with an Intel processor, macOS 11+ | **[⬇ Zeus-Poseidon-macos-intel.zip](https://github.com/nic0lasm/zeus-poseidon-arm64/releases/latest/download/Zeus-Poseidon-macos-intel.zip)** |
-| Linux x86-64 (Ubuntu 22.04, Debian 12, Fedora 36 or later) | **[⬇ Zeus-Poseidon-linux-x86_64.AppImage](https://github.com/nic0lasm/zeus-poseidon-arm64/releases/latest/download/Zeus-Poseidon-linux-x86_64.AppImage)** |
-| Linux arm64 (same distributions) | **[⬇ Zeus-Poseidon-linux-aarch64.AppImage](https://github.com/nic0lasm/zeus-poseidon-arm64/releases/latest/download/Zeus-Poseidon-linux-aarch64.AppImage)** |
+| Mac with Apple Silicon (M1 or later), macOS 11+ | **[⬇ Zeus-Poseidon-macos-arm64.zip](https://github.com/nateowen88-kc/zeus-poseidon-hd/releases/latest/download/Zeus-Poseidon-macos-arm64.zip)** |
+| Mac with an Intel processor, macOS 11+ | **[⬇ Zeus-Poseidon-macos-intel.zip](https://github.com/nateowen88-kc/zeus-poseidon-hd/releases/latest/download/Zeus-Poseidon-macos-intel.zip)** |
+| Linux x86-64 (Ubuntu 22.04, Debian 12, Fedora 36 or later) | **[⬇ Zeus-Poseidon-linux-x86_64.AppImage](https://github.com/nateowen88-kc/zeus-poseidon-hd/releases/latest/download/Zeus-Poseidon-linux-x86_64.AppImage)** |
+| Linux arm64 (same distributions) | **[⬇ Zeus-Poseidon-linux-aarch64.AppImage](https://github.com/nateowen88-kc/zeus-poseidon-hd/releases/latest/download/Zeus-Poseidon-linux-aarch64.AppImage)** |
 
-Every version and its notes: [Releases](https://github.com/nic0lasm/zeus-poseidon-arm64/releases).
+Every version and its notes: [Releases](https://github.com/nateowen88-kc/zeus-poseidon-hd/releases).
 On macOS 11 to 13 the Mac archives are checked by the CI but not yet on a real Mac: if you have
 one, a word on [#139](https://github.com/nic0lasm/zeus-poseidon-arm64/issues/139) helps.
 
@@ -75,7 +80,7 @@ CrossOver, Whisky or Wine bottle; otherwise copy the `Zeus + Poseidon` folder fr
 
 - **The whole game:** the sixteen tutorials, the Zeus and Poseidon adventures, the adventure
   editor, save and load, music, 3D sound and the intro video.
-- **A modern window:** window or full screen (⌘F), sharp at any size, a wide mode fitted to your
+- **A modern window:** starts full screen; ⌘F switches to a window, sharp at any size, a wide mode fitted to your
   screen, and the game's own cursors, sharp on Retina.
 - **Smooth:** walkers and animations at up to about 60 frames per second instead of 15, a city
   that glides as it scrolls, with the arrows or W A S D.
@@ -96,6 +101,7 @@ fully native engine (2.0, the way Julius did for *Caesar III*) is on hold, with 
 
 | Version | Highlights |
 |---|---|
+| [**1.7.4**](https://github.com/nateowen88-kc/zeus-poseidon-hd/releases/tag/v1.7.4) | the application starts full screen; ⌘F or ⌘↩ switches to a window |
 | [**1.7.3**](https://github.com/nic0lasm/zeus-poseidon-arm64/releases/tag/v1.7.3) | R rotates a building's footprint again, with any keyboard layout ([#172](https://github.com/nic0lasm/zeus-poseidon-arm64/pull/172)); a Mac run up to a sixth faster at times ([#170](https://github.com/nic0lasm/zeus-poseidon-arm64/pull/170)); the floating-point start of a Windows thread ([#171](https://github.com/nic0lasm/zeus-poseidon-arm64/pull/171)) (all by [@northdakota](https://github.com/northdakota)) |
 | [**1.7.2**](https://github.com/nic0lasm/zeus-poseidon-arm64/releases/tag/v1.7.2) | wide modes: nothing left of the previous screen around the menus ([#159](https://github.com/nic0lasm/zeus-poseidon-arm64/issues/159)) |
 | [**1.7.1**](https://github.com/nic0lasm/zeus-poseidon-arm64/releases/tag/v1.7.1) | smoother: a frame for every simulation tick, smooth scrolling, W A S D; the game's own cursors; menus centred in wide modes; Steam found in Wine bottles; tools to translate into a new language |
