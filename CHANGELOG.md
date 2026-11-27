@@ -5,6 +5,10 @@ pull request.
 
 ## Unreleased
 
+## 1.7.4 — 2026-11-26
+
+- **The application opens full screen.** Switch between full screen and a window with ⌘F or ⌘↩ on Mac. The command-line game remains windowed by default; its `--fullscreen` option is unchanged.
+
 ## 1.7.3 — 2026-11-21
 
 - **R rotates a building's footprint again.** The game reads R with `GetAsyncKeyState('R')` and rotates only when the result is exactly 0x8001: down now, and pressed since its previous look (`0x004532B0`, rotation index at `0x00DA23C4`; the R case of the window procedure only flips a byte nothing reads). The host returned 0x8000 at most, so the palace, the gatehouse, the horse ranch, the sanctuaries and the pyramids never rotated. `GetAsyncKeyState` now adds 0x0001 when the key went down since the previous call for that key, as Windows does. The game looks at R only when the tile under the pointer changes; on a Mac the pointer stays still while a key is pressed, so when R goes down on a city screen the host moves the game's pointer one tile aside (60 pixels) and back two frames later: one press, one quarter turn, as the in-game help describes. And with a layout that is not Latin (Ukrainian, Russian, Greek…), letter and digit keys now get the virtual key of their US position, as on Windows, where SDL gave the layout's own character and the host sent nothing: R works whatever the layout. Pause (P) and freeze (M) are read as characters (`WM_CHAR`) and follow the layout, as on Windows.
